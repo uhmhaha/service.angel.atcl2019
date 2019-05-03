@@ -1,0 +1,15 @@
+* spring 2.0 async방식의 web-flux 사용을 위한 제안
+1. pom.xml 변경/ 추가 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webflux</artifactId>
+		</dependency>
+
+2. 예제 : https://github.com/callicoder/spring-webflux-reactive-rest-api-demo 
+(*추가설명, 
+    -. 개발시 차이점은 별로 없습니다. flux와 Mono로 return만 하면됩니다. 
+    -. db관련 async library는 별로 많지 않습니다. MongoDB와 하나가더 잇는데...기억이..)
